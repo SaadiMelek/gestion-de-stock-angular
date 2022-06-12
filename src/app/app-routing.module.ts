@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { NouveauCltFrsComponent } from './composants/nouveau-clt-frs/nouveau-clt-frs.component';
 import { NouvelArticleComponent } from './pages/articles/nouvel-article/nouvel-article.component';
 import { PageArticleComponent } from './pages/articles/page-article/page-article.component';
 import { PageClientComponent } from './pages/client/page-client/page-client.component';
@@ -44,8 +45,16 @@ const routes: Routes = [
         component: PageClientComponent
       },
       {
+        path: 'nouveauclient',
+        component: NouveauCltFrsComponent
+      },
+      {
         path: 'fournisseurs',
         component: PageFournisseurComponent
+      },
+      {
+        path: 'nouveaufournisseur',
+        component: NouveauCltFrsComponent
       }
     ]
   }
