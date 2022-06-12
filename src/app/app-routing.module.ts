@@ -62,10 +62,6 @@ const routes: Routes = [
         component: NouveauCltFrsComponent
       },
       {
-        path: 'nouveaufournisseur',
-        component: NouveauCltFrsComponent
-      },
-      {
         path: 'commandesfournisseur',
         component: PageCmdCltFrsComponent
       }
