@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NouveauCltFrsComponent } from './composants/nouveau-clt-frs/nouveau-clt-frs.component';
+import { NouvelleCmdCtlFrsComponent } from './composants/nouvelle-cmd-ctl-frs/nouvelle-cmd-ctl-frs.component';
 import { NouvelArticleComponent } from './pages/articles/nouvel-article/nouvel-article.component';
 import { PageArticleComponent } from './pages/articles/page-article/page-article.component';
 import { PageClientComponent } from './pages/client/page-client/page-client.component';
@@ -54,6 +55,10 @@ const routes: Routes = [
         component: PageCmdCltFrsComponent
       },
       {
+        path: 'nouvellecommandeclt',
+        component: NouvelleCmdCtlFrsComponent
+      },
+      {
         path: 'fournisseurs',
         component: PageFournisseurComponent
       },
@@ -64,6 +69,10 @@ const routes: Routes = [
       {
         path: 'commandesfournisseur',
         component: PageCmdCltFrsComponent
+      },
+      {
+        path: 'nouvellecommandefrs',
+        component: NouvelleCmdCtlFrsComponent
       }
     ]
   }

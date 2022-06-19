@@ -1,0 +1,96 @@
+<div class="col mt-3 mb-3">
+    <div class="col-md-12">
+        <div class="col-md-12 mb-5">
+            <h2>Nouvelle commande</h2>
+        </div>
+        <div class="row p-3 custom-border">
+            <div class="col-md-5 custom-border-right">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Code commande">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Date commande">
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" aria-label="Default select example">
+                            <option selected>Sélectionner un client</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-5 custom-border-right">
+                <div class="col">
+                    <div class="row mt-4">
+                        <div class="col-md-1"><i class="blue-color fas fa-solid fa-circle-info"></i></div>
+                        <div class="col-md-10">Nom</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1"><i class="blue-color fas fa-solid fa-circle-info"></i></div>
+                        <div class="col-md-10">Prénom</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1"><i class="blue-color fa-solid fa-phone"></i></div>
+                        <div class="col-md-10">0033753614292</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1"><i class="blue-color fa-solid fa-hourglass-end"></i></div>
+                        <div class="col-md-10">EN PREPARATION</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 text-center">
+                <img src="assets/products.png" class="rounded-cercle" width="150px" height="150px"/>
+            </div>
+        </div>
+        <div class="row mt-2 p-3 custom-border">
+            <div class="col p-0">
+                <form>
+                    <div class="form-row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Code article">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Quantité">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control">
+                    </div>
+                    <button type="button" class="btn btn-success">
+                        <i class="fas fa-plus"></i>&nbsp;
+                    </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row mt-2 p-3 custom-border" style="max-height: 300px; overflow-y: scroll;">
+            <div class="col-md-12 p-2">
+            <app-detail-cmd></app-detail-cmd>
+            <app-detail-cmd></app-detail-cmd>
+            <app-detail-cmd></app-detail-cmd>
+            <app-detail-cmd></app-detail-cmd>
+            <app-detail-cmd></app-detail-cmd>
+            <app-detail-cmd></app-detail-cmd>
+            <app-detail-cmd></app-detail-cmd>
+            <app-detail-cmd></app-detail-cmd>
+            </div>
+        </div>
+        <div class="row mt-2 p-1 custom-border text-right">
+            <div class="col-md-12 p-2">
+                <h4>Totale de la commade : 135.9</h4>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-12 mt-2 pr-0 text-right">
+        <button class="btn btn-danger mr-3">
+            <i class="fas fa-ban"></i>&nbsp; Annuler
+        </button>
+        <button class="btn btn-primary">
+            <i class="fas fa-save"></i>&nbsp; Enregistrer
+        </button>
+    </div>
+</div>
