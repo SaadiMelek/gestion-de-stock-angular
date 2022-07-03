@@ -100,13 +100,13 @@ export class MenuComponent implements OnInit {
           id: '51',
           titre: 'Categories',
           icon: 'fas fa-tools',
-          url: ''
+          url: 'categories'
         },
         {
           id: '52',
           titre: 'Utilisateurs',
           icon: 'fas fa-users-cog',
-          url: ''
+          url: 'utilisateurs'
         }
       ]
     }

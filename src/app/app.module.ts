@@ -25,6 +25,11 @@ import { DetailCmdCltFrsComponent } from './composants/detail-cmd-clt-frs/detail
 import { DetailCmdComponent } from './composants/detail-cmd/detail-cmd.component';
 import { PageCmdCltFrsComponent } from './pages/page-cmd-clt-frs/page-cmd-clt-frs.component';
 import { NouvelleCmdCtlFrsComponent } from './composants/nouvelle-cmd-ctl-frs/nouvelle-cmd-ctl-frs.component';
+import { PageCategoriesComponent } from './pages/page-categories/page-categories.component';
+import { NouvelleCategorieComponent } from './pages/categories/nouvelle-categorie/nouvelle-categorie.component';
+import { PageUtilisateurComponent } from './pages/utilisateurs/page-utilisateur/page-utilisateur.component';
+import { DetailUtilisateurComponent } from './composants/detail-utilisateur/detail-utilisateur.component';
+import { NouvelUtilisateurComponent } from './pages/utilisateurs/nouvel-utilisateur/nouvel-utilisateur.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +55,12 @@ import { NouvelleCmdCtlFrsComponent } from './composants/nouvelle-cmd-ctl-frs/no
     DetailCmdCltFrsComponent,
     DetailCmdComponent,
     PageCmdCltFrsComponent,
-    NouvelleCmdCtlFrsComponent
+    NouvelleCmdCtlFrsComponent,
+    PageCategoriesComponent,
+    NouvelleCategorieComponent,
+    PageUtilisateurComponent,
+    DetailUtilisateurComponent,
+    NouvelUtilisateurComponent
   ],
   imports: [
     BrowserModule,
