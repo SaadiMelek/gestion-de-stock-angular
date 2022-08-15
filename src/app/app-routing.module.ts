@@ -54,15 +54,24 @@ const routes: Routes = [
       },
       {
         path: 'nouveauclient',
-        component: NouveauCltFrsComponent
+        component: NouveauCltFrsComponent,
+        data : {
+          origin: 'client'
+        }
       },
       {
         path: 'commandesclient',
-        component: PageCmdCltFrsComponent
+        component: PageCmdCltFrsComponent,
+        data : {
+          origin: 'client'
+        }
       },
       {
         path: 'nouvellecommandeclt',
-        component: NouvelleCmdCtlFrsComponent
+        component: NouvelleCmdCtlFrsComponent,
+        data : {
+          origin: 'client'
+        }
       },
       {
         path: 'fournisseurs',
@@ -70,15 +79,24 @@ const routes: Routes = [
       },
       {
         path: 'nouveaufournisseur',
-        component: NouveauCltFrsComponent
+        component: NouveauCltFrsComponent,
+        data : {
+          origin: 'fournisseur'
+        }
       },
       {
         path: 'commandesfournisseur',
-        component: PageCmdCltFrsComponent
+        component: PageCmdCltFrsComponent,
+        data : {
+          origin: 'fournisseur'
+        }
       },
       {
         path: 'nouvellecommandefrs',
-        component: NouvelleCmdCtlFrsComponent
+        component: NouvelleCmdCtlFrsComponent,
+        data : {
+          origin: 'fournisseur'
+        }
       },
       {
         path: 'categories',

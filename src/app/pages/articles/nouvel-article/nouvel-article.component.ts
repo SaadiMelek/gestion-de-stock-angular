@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-nouvel-article',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NouvelArticleComponent implements OnInit {
 
-  constructor() { }
+  origin = '';
+
+  constructor(
+    private router: Router,
+    private activatedRoute: ActivatedRoute
+  ) { }
 
   ngOnInit(): void {
+    this.activatedRoute.data.subscribe( data => {
+      this.origin = data['origin'];
+    });
+  }
+
+  cancelClick(): void {
+    this.router.navigate(['articles']);
   }
 
 }

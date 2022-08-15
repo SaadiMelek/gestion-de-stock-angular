@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-nouvelle-cmd-ctl-frs',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NouvelleCmdCtlFrsComponent implements OnInit {
 
-  constructor() { }
+  origin = '';
+  
+  constructor(
+    private activatedRoute: ActivatedRoute
+    ) { }
 
   ngOnInit(): void {
+    this.activatedRoute.data.subscribe( data => {
+      this.origin = data['origin'];
+    });
   }
 
 }
