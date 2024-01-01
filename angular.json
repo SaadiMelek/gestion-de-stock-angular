@@ -115,5 +115,8 @@
       }
     }
   },
-  "defaultProject": "gestion-de-stock"
+  "defaultProject": "gestion-de-stock",
+  "cli": {
+    "analytics": "7c6212ff-34f8-488e-b89b-b58b24d851a9"
+  }
 }
