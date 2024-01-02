@@ -78,10 +78,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "gestion-de-stock:build:production"
+              "buildTarget": "gestion-de-stock:build:production"
             },
             "development": {
-              "browserTarget": "gestion-de-stock:build:development"
+              "buildTarget": "gestion-de-stock:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -89,7 +89,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "gestion-de-stock:build"
+            "buildTarget": "gestion-de-stock:build"
           }
         },
         "test": {
@@ -108,7 +108,7 @@
               "src/styles.scss"
             ],
             "scripts": [
-              
+
             ]
           }
         }
